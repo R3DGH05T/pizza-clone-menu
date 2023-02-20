@@ -1,0 +1,922 @@
+<html lang="es" dir="ltr"><head><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}</style>
+    <title> Pizzeria  - Kosari menu digital</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+
+    <meta name="author" content="Kosari menu digital">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//google.com">
+    <link rel="dns-prefetch" href="//apis.google.com">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="//gstatic.com">
+    <link rel="dns-prefetch" href="//oss.maxcdn.com">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="https://menu.kosari.net/storage/logo/favicon.png">
+    <!-- Bootstrap v4.3.1 CSS -->
+    <link rel="stylesheet" href="https://menu.kosari.net/includes/assets/bootstrap/css/bootstrap.min.css">
+
+    <script async="">
+        var themecolor = '#d81313';
+        var mapcolor = '#8080ff';
+        var siteurl = 'https://menu.kosari.net/';
+        var template_name = 'restro-theme';
+        var ajaxurl = "https://menu.kosari.net/php/bg0sdibl93.php";
+    </script>
+    <style>
+        :root
+
+        {--theme-color-0_01: rgba(81,49,0,0.01);--theme-color-0_02: rgba(81,49,0,0.02);--theme-color-0_03: rgba(81,49,0,0.03);--theme-color-0_04: rgba(81,49,0,0.04);--theme-color-0_05: rgba(81,49,0,0.05);--theme-color-0_06: rgba(81,49,0,0.06);--theme-color-0_07: rgba(81,49,0,0.07);--theme-color-0_08: rgba(81,49,0,0.08);--theme-color-0_09: rgba(81,49,0,0.09);--theme-color-0_1: rgba(81,49,0,0.1);--theme-color-0_11: rgba(81,49,0,0.11);--theme-color-0_12: rgba(81,49,0,0.12);--theme-color-0_13: rgba(81,49,0,0.13);--theme-color-0_14: rgba(81,49,0,0.14);--theme-color-0_15: rgba(81,49,0,0.15);--theme-color-0_16: rgba(81,49,0,0.16);--theme-color-0_17: rgba(81,49,0,0.17);--theme-color-0_18: rgba(81,49,0,0.18);--theme-color-0_19: rgba(81,49,0,0.19);--theme-color-0_2: rgba(81,49,0,0.2);--theme-color-0_21: rgba(81,49,0,0.21);--theme-color-0_22: rgba(81,49,0,0.22);--theme-color-0_23: rgba(81,49,0,0.23);--theme-color-0_24: rgba(81,49,0,0.24);--theme-color-0_25: rgba(81,49,0,0.25);--theme-color-0_26: rgba(81,49,0,0.26);--theme-color-0_27: rgba(81,49,0,0.27);--theme-color-0_28: rgba(81,49,0,0.28);--theme-color-0_29: rgba(81,49,0,0.29);--theme-color-0_3: rgba(81,49,0,0.3);--theme-color-0_31: rgba(81,49,0,0.31);--theme-color-0_32: rgba(81,49,0,0.32);--theme-color-0_33: rgba(81,49,0,0.33);--theme-color-0_34: rgba(81,49,0,0.34);--theme-color-0_35: rgba(81,49,0,0.35);--theme-color-0_36: rgba(81,49,0,0.36);--theme-color-0_37: rgba(81,49,0,0.37);--theme-color-0_38: rgba(81,49,0,0.38);--theme-color-0_39: rgba(81,49,0,0.39);--theme-color-0_4: rgba(81,49,0,0.4);--theme-color-0_41: rgba(81,49,0,0.41);--theme-color-0_42: rgba(81,49,0,0.42);--theme-color-0_43: rgba(81,49,0,0.43);--theme-color-0_44: rgba(81,49,0,0.44);--theme-color-0_45: rgba(81,49,0,0.45);--theme-color-0_46: rgba(81,49,0,0.46);--theme-color-0_47: rgba(81,49,0,0.47);--theme-color-0_48: rgba(81,49,0,0.48);--theme-color-0_49: rgba(81,49,0,0.49);--theme-color-0_5: rgba(81,49,0,0.5);--theme-color-0_51: rgba(81,49,0,0.51);--theme-color-0_52: rgba(81,49,0,0.52);--theme-color-0_53: rgba(81,49,0,0.53);--theme-color-0_54: rgba(81,49,0,0.54);--theme-color-0_55: rgba(81,49,0,0.55);--theme-color-0_56: rgba(81,49,0,0.56);--theme-color-0_57: rgba(81,49,0,0.57);--theme-color-0_58: rgba(81,49,0,0.58);--theme-color-0_59: rgba(81,49,0,0.59);--theme-color-0_6: rgba(81,49,0,0.6);--theme-color-0_61: rgba(81,49,0,0.61);--theme-color-0_62: rgba(81,49,0,0.62);--theme-color-0_63: rgba(81,49,0,0.63);--theme-color-0_64: rgba(81,49,0,0.64);--theme-color-0_65: rgba(81,49,0,0.65);--theme-color-0_66: rgba(81,49,0,0.66);--theme-color-0_67: rgba(81,49,0,0.67);--theme-color-0_68: rgba(81,49,0,0.68);--theme-color-0_69: rgba(81,49,0,0.69);--theme-color-0_7: rgba(81,49,0,0.7);--theme-color-0_71: rgba(81,49,0,0.71);--theme-color-0_72: rgba(81,49,0,0.72);--theme-color-0_73: rgba(81,49,0,0.73);--theme-color-0_74: rgba(81,49,0,0.74);--theme-color-0_75: rgba(81,49,0,0.75);--theme-color-0_76: rgba(81,49,0,0.76);--theme-color-0_77: rgba(81,49,0,0.77);--theme-color-0_78: rgba(81,49,0,0.78);--theme-color-0_79: rgba(81,49,0,0.79);--theme-color-0_8: rgba(81,49,0,0.8);--theme-color-0_81: rgba(81,49,0,0.81);--theme-color-0_82: rgba(81,49,0,0.82);--theme-color-0_83: rgba(81,49,0,0.83);--theme-color-0_84: rgba(81,49,0,0.84);--theme-color-0_85: rgba(81,49,0,0.85);--theme-color-0_86: rgba(81,49,0,0.86);--theme-color-0_87: rgba(81,49,0,0.87);--theme-color-0_88: rgba(81,49,0,0.88);--theme-color-0_89: rgba(81,49,0,0.89);--theme-color-0_9: rgba(81,49,0,0.9);--theme-color-0_91: rgba(81,49,0,0.91);--theme-color-0_92: rgba(81,49,0,0.92);--theme-color-0_93: rgba(81,49,0,0.93);--theme-color-0_94: rgba(81,49,0,0.94);--theme-color-0_95: rgba(81,49,0,0.95);--theme-color-0_96: rgba(81,49,0,0.96);--theme-color-0_97: rgba(81,49,0,0.97);--theme-color-0_98: rgba(81,49,0,0.98);--theme-color-0_99: rgba(81,49,0,0.99);--theme-color-1: rgba(81,49,0,1);}
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://menu.kosari.net/restaurant-templates/modern-theme/css/normalize.css">
+    <link rel="stylesheet" href="https://menu.kosari.net/restaurant-templates/modern-theme/lib/lightbox/lightgallery.min.css">
+    <link rel="stylesheet" href="https://menu.kosari.net/restaurant-templates/modern-theme/css/theme.css?ver=6.3.5">
+    <link rel="stylesheet" type="text/css" href="https://menu.kosari.net/restaurant-templates/modern-theme/lib/node-waves/waves.css">
+    <!--Icon CSS-->
+    <link rel="stylesheet" href="https://menu.kosari.net/includes/assets/css/icons.css">
+    <script src="https://menu.kosari.net/templates/restro-theme/js/jquery-3.4.1.min.js"></script>
+</head>
+<body class="default ltr" data-tippy-delegate="">
+<!--[if lt IE 8]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.
+</p>
+<![endif]-->
+<!-- Preloading -->
+<div class="preloading" style="display: none;">
+    <div class="wrap-preload">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!-- .Preloading -->
+<!-- Sidebar left -->
+<nav id="sidebarleft" class="sidenav">
+    <div class="sidebar-header">
+        <img src="https://menu.kosari.net/storage/restaurant/cover/16710321436399ed4fbac0c.jpg">
+    </div>
+    <div class="heading">
+        <div class="title col-secondary font-weight-normal">todas las categorias</div>
+    </div>
+    <ul class="list-unstyled components">
+        
+            <li>
+                <a href="#" data-catid="10" class="menu-category active waves-effect waves-block"><i class="icon-material-outline-restaurant"></i> Pizzas</a>
+            </li>
+        
+            <li>
+                <a href="#" data-catid="11" class="menu-category waves-effect waves-block"><i class="icon-material-outline-restaurant"></i> Bebidas</a>
+            </li>
+        
+            <li>
+                <a href="#" data-catid="12" class="menu-category waves-effect waves-block"><i class="icon-material-outline-restaurant"></i> Postres</a>
+            </li>
+        
+            <li>
+                <a href="#" data-catid="13" class="menu-category waves-effect waves-block"><i class="icon-material-outline-restaurant"></i> Acompañamientos</a>
+            </li>
+        
+            <li>
+                <a href="#" data-catid="16" class="menu-category waves-effect waves-block"><i class="icon-material-outline-restaurant"></i> Ceviche</a>
+            </li>
+        
+    </ul>
+</nav>
+<!-- .Sidebar left -->
+
+<!-- Header  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-header">
+    <div class="container-fluid flex-nowrap">
+        <button type="button" id="sidebarleftbutton" class="btn mr-4">
+            <i class="icon-feather-menu"></i>
+        </button>
+                <button type="button" class="btn btn-default ml-auto mr-1" id="call-the-waiter-btn" title="Llamar al camarero">
+            <i class="fa fa-bell"></i>
+            <span class="d-none d-sm-inline">Llamar al camarero</span>
+        </button>
+                    </div>
+</nav>
+<!-- .Header  -->
+<!-- Content  -->
+<div id="content">
+    <!-- Content Wrap  -->
+    <div class="content-wrap">
+        <div class="single-page-header detail-header" data-background-image="https://menu.kosari.net/storage/restaurant/cover/16710321436399ed4fbac0c.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="single-page-header-inner">
+                            <div class="left-side">
+                                <div class="header-image"><img src="https://menu.kosari.net/storage/restaurant/logo/16710321436399ed4fb04cb.jpg">
+                                </div>
+                                <div class="header-details">
+                                    <h3>Pizzeria <span>Las mejores pizzas de la ciudad</span></h3>
+                                    <ul>
+                                                                                <li><i class="icon-feather-watch margin-right-5"></i> 08:00 a.m, - 21:00 p.m.</li>                                        <li><i class="icon-feather-map margin-right-5"></i> <a target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Medellin 56 - 17">Medellin 56 - 17</a>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="background-image-container" style="background-image: url(&quot;https://menu.kosari.net/storage/restaurant/cover/16710321436399ed4fbac0c.jpg&quot;);"></div></div>
+
+        
+        <div class="card-body menu-category-item menu-category-10" style=""><div class="section-menu" data-id="37" data-name="Mediana Borde de Queso" data-price="$25,000.00" data-amount="25000" data-description="Una Pizza Mediana de 8 porciones con borde de queso (Hut Cheese) de un Ingrediente: Queso, Jamón, Tomate o Pepperoni 🍕🤤. 🛵¡DOMICILIO GRATIS!🛵" data-image-url="https://menu.kosari.net/storage/menu/16710296006399e36000165.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg0">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710296006399e36000165.jpeg" data-original="https://menu.kosari.net/storage/menu/16710296006399e36000165.jpeg" alt="Mediana Borde de Queso" data-src="https://menu.kosari.net/storage/menu/16710296006399e36000165.jpeg" data-sub-html="Una Pizza Mediana de 8 porciones con borde de queso (Hut Cheese) de un Ingrediente: Queso, Jamón, Tomate o Pepperoni 🍕🤤. 🛵¡DOMICILIO GRATIS!🛵" style="">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Mediana Borde de Queso</h4>
+                                        <div class="menu-price">$25,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Una Pizza Mediana de 8 porciones con borde de queso (Hut Cheese) de un Ingrediente: Queso, Jamón, Tomate o Pepperoni 🍕🤤. 🛵¡DOMICILIO GRATIS!🛵</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="36" data-name="Combo Familiar" data-price="$25,000.00" data-amount="25000" data-description="Pizza Grande (12 porciones) elige entre Jamón, Pepperoni, Napolitana o Queso + Chocolate Sticks + Gaseosa 1.5 Lts. 🤤🍕. Si eliges masa Hut Cheese o Cheesy Pops (8 porciones) el borde tiene costo adicional." data-image-url="https://menu.kosari.net/storage/menu/16710294296399e2b5ad233.png">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg1">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710294296399e2b5ad233.png" data-original="https://menu.kosari.net/storage/menu/16710294296399e2b5ad233.png" alt="Combo Familiar" data-src="https://menu.kosari.net/storage/menu/16710294296399e2b5ad233.png" data-sub-html="Pizza Grande (12 porciones) elige entre Jamón, Pepperoni, Napolitana o Queso + Chocolate Sticks + Gaseosa 1.5 Lts. 🤤🍕. Si eliges masa Hut Cheese o Cheesy Pops (8 porciones) el borde tiene costo adicional." style="">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Combo Familiar</h4>
+                                        <div class="menu-price">$25,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                            <span class="customize">personalizable</span>        </div></div>
+                                <div class="menu-recipe">Pizza Grande (12 porciones) elige entre Jamón, Pepperoni, Napolitana o Queso + Chocolate Sticks + Gaseosa 1.5 Lts. 🤤🍕. Si eliges masa Hut Cheese o Cheesy Pops (8 porciones) el borde tiene costo adicional.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="38" data-name="Cheesy Pops Grande Más Sabores!🍕🤤" data-price="$27,000.00" data-amount="27000" data-description="Pizza Grande (8 porciones) con Borde de Queso (Hut Cheese o Cheesy Pops) Exclusiva pidiendo online. Aprovecha los múltiples sabores que tenemos para ti 🍕🤤" data-image-url="https://menu.kosari.net/storage/menu/16710296556399e3973321b.png">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg2">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710296556399e3973321b.png" data-original="https://menu.kosari.net/storage/menu/16710296556399e3973321b.png" alt="Cheesy Pops Grande Más Sabores!🍕🤤" data-src="https://menu.kosari.net/storage/menu/16710296556399e3973321b.png" data-sub-html="Pizza Grande (8 porciones) con Borde de Queso (Hut Cheese o Cheesy Pops) Exclusiva pidiendo online. Aprovecha los múltiples sabores que tenemos para ti 🍕🤤" style="">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Cheesy Pops Grande Más Sabores!🍕🤤</h4>
+                                        <div class="menu-price">$27,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Pizza Grande (8 porciones) con Borde de Queso (Hut Cheese o Cheesy Pops) Exclusiva pidiendo online. Aprovecha los múltiples sabores que tenemos para ti 🍕🤤</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="39" data-name="2 Pizzas Medianas + Bebida 1,5 Lt." data-price="$45,000.00" data-amount="45000" data-description="DUO BOX Medianas en sabores Tradicionales en masas Thin &amp; Crispy, Artesanal o Pan Pizza. Elige sabores Irresistibles +5.900 c/u y Borde de Queso (Hut Cheese) +7.900 c/u." data-image-url="https://menu.kosari.net/storage/menu/16710300306399e50ec82c6.png">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg3">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710300306399e50ec82c6.png" data-original="https://menu.kosari.net/storage/menu/16710300306399e50ec82c6.png" alt="2 Pizzas Medianas + Bebida 1,5 Lt." data-src="https://menu.kosari.net/storage/menu/16710300306399e50ec82c6.png" data-sub-html="DUO BOX Medianas en sabores Tradicionales en masas Thin &amp; Crispy, Artesanal o Pan Pizza. Elige sabores Irresistibles +5.900 c/u y Borde de Queso (Hut Cheese) +7.900 c/u." style="">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>2 Pizzas Medianas + Bebida 1,5 Lt.</h4>
+                                        <div class="menu-price">$45,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">DUO BOX Medianas en sabores Tradicionales en masas Thin &amp; Crispy, Artesanal o Pan Pizza. Elige sabores Irresistibles +5.900 c/u y Borde de Queso (Hut Cheese) +7.900 c/u.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="40" data-name="Hawaiana" data-price="$35,000.00" data-amount="35000" data-description="La hawaiana más hawaiana de todas: jamón y piña. ¡Pruébala!" data-image-url="https://menu.kosari.net/storage/menu/16710300886399e5481847e.png">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg4">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710300886399e5481847e.png" data-original="https://menu.kosari.net/storage/menu/16710300886399e5481847e.png" alt="Hawaiana" data-src="https://menu.kosari.net/storage/menu/16710300886399e5481847e.png" data-sub-html="La hawaiana más hawaiana de todas: jamón y piña. ¡Pruébala!" style="">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Hawaiana</h4>
+                                        <div class="menu-price">$35,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">La hawaiana más hawaiana de todas: jamón y piña. ¡Pruébala!</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="41" data-name="Pepperoni" data-price="$35,000.00" data-amount="35000" data-description="Sabemos que muchos aman el pepperoni, por eso creamos esta pizza. Escoge tu masa y disfruta el pepperoni." data-image-url="https://menu.kosari.net/storage/menu/16710302526399e5ec79f29.png">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg5">
+                                    <img class="menu-lightbox-image" src="https://menu.kosari.net/storage/menu/16710302526399e5ec79f29.png" data-original="https://menu.kosari.net/storage/menu/16710302526399e5ec79f29.png" alt="Pepperoni" data-src="https://menu.kosari.net/storage/menu/16710302526399e5ec79f29.png" data-sub-html="Sabemos que muchos aman el pepperoni, por eso creamos esta pizza. Escoge tu masa y disfruta el pepperoni." style="">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Pepperoni</h4>
+                                        <div class="menu-price">$35,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Sabemos que muchos aman el pepperoni, por eso creamos esta pizza. Escoge tu masa y disfruta el pepperoni.</div>
+                                
+                            </div>
+                        </div>
+                    </div></div>
+        
+        <div class="card-body menu-category-item menu-category-11" style="display: none;"><div class="section-menu" data-id="42" data-name="Pepsi 1.5L" data-price="$5,000.00" data-amount="5000" data-description="Llena de sabor y energía, presentación de litro y medio" data-image-url="https://menu.kosari.net/storage/menu/16710303166399e62c79ac2.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg6">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710303166399e62c79ac2.jpeg" alt="Pepsi 1.5L" data-src="https://menu.kosari.net/storage/menu/16710303166399e62c79ac2.jpeg" data-sub-html="Llena de sabor y energía, presentación de litro y medio">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Pepsi 1.5L</h4>
+                                        <div class="menu-price">$5,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Llena de sabor y energía, presentación de litro y medio</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="43" data-name="Pepsi 400ML" data-price="$5,000.00" data-amount="5000" data-description="Llena de sabor y energía, presentación 400 ml." data-image-url="https://menu.kosari.net/storage/menu/16710303736399e6659cb60.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg7">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710303736399e6659cb60.jpeg" alt="Pepsi 400ML" data-src="https://menu.kosari.net/storage/menu/16710303736399e6659cb60.jpeg" data-sub-html="Llena de sabor y energía, presentación 400 ml.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Pepsi 400ML</h4>
+                                        <div class="menu-price">$5,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Llena de sabor y energía, presentación 400 ml.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="44" data-name="Manzana 400ML" data-price="$5,000.00" data-amount="5000" data-description="¡Única en el mundo por su sabor y color!, presentación 400 ml." data-image-url="https://menu.kosari.net/storage/menu/16710306136399e755d3ee8.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg8">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710306136399e755d3ee8.jpeg" alt="Manzana 400ML" data-src="https://menu.kosari.net/storage/menu/16710306136399e755d3ee8.jpeg" data-sub-html="¡Única en el mundo por su sabor y color!, presentación 400 ml.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Manzana 400ML</h4>
+                                        <div class="menu-price">$5,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">¡Única en el mundo por su sabor y color!, presentación 400 ml.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="45" data-name="Mr Tea Durazno 500 ml." data-price="$5,000.00" data-amount="5000" data-description="Llena de sabor y energía, presentación de 500 ml." data-image-url="https://menu.kosari.net/storage/menu/16710306696399e78da6639.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg9">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710306696399e78da6639.jpeg" alt="Mr Tea Durazno 500 ml." data-src="https://menu.kosari.net/storage/menu/16710306696399e78da6639.jpeg" data-sub-html="Llena de sabor y energía, presentación de 500 ml.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Mr Tea Durazno 500 ml.</h4>
+                                        <div class="menu-price">$5,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Llena de sabor y energía, presentación de 500 ml.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="46" data-name="Agua Cristal 600 ml" data-price="$25,000.00" data-amount="25000" data-description="¡El agua de vida!" data-image-url="https://menu.kosari.net/storage/menu/16710310106399e8e244267.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg10">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710310106399e8e244267.jpeg" alt="Agua Cristal 600 ml" data-src="https://menu.kosari.net/storage/menu/16710310106399e8e244267.jpeg" data-sub-html="¡El agua de vida!">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Agua Cristal 600 ml</h4>
+                                        <div class="menu-price">$25,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">¡El agua de vida!</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="47" data-name="7UP 2 Lt." data-price="$5,500.00" data-amount="5500" data-description="Para disfrutar la vida de una forma descomplicada, presentación de dos litros." data-image-url="https://menu.kosari.net/storage/menu/16710311466399e96a0a2f2.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg11">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710311466399e96a0a2f2.jpeg" alt="7UP 2 Lt." data-src="https://menu.kosari.net/storage/menu/16710311466399e96a0a2f2.jpeg" data-sub-html="Para disfrutar la vida de una forma descomplicada, presentación de dos litros.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>7UP 2 Lt.</h4>
+                                        <div class="menu-price">$5,500.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Para disfrutar la vida de una forma descomplicada, presentación de dos litros.</div>
+                                
+                            </div>
+                        </div>
+                    </div></div>
+        
+        <div class="card-body menu-category-item menu-category-12" style="display: none;"><div class="section-menu" data-id="48" data-name="Cinnamon Sticks" data-price="$6,900.00" data-amount="6900" data-description="5 trozos de delicioso Pan y Canela, la combinación perfecta e inmejorable!" data-image-url="https://menu.kosari.net/storage/menu/16710312186399e9b29a4ca.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg12">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710312186399e9b29a4ca.jpeg" alt="Cinnamon Sticks" data-src="https://menu.kosari.net/storage/menu/16710312186399e9b29a4ca.jpeg" data-sub-html="5 trozos de delicioso Pan y Canela, la combinación perfecta e inmejorable!">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Cinnamon Sticks</h4>
+                                        <div class="menu-price">$6,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">5 trozos de delicioso Pan y Canela, la combinación perfecta e inmejorable!</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="49" data-name="Chocolate Sticks" data-price="$7,500.00" data-amount="7500" data-description="Para los amantes del chocolate, la combinación perfecta, palitos de masa horneada rellenos de suave chocolate derretido." data-image-url="https://menu.kosari.net/storage/menu/16710312706399e9e6a0e30.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg13">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710312706399e9e6a0e30.jpeg" alt="Chocolate Sticks" data-src="https://menu.kosari.net/storage/menu/16710312706399e9e6a0e30.jpeg" data-sub-html="Para los amantes del chocolate, la combinación perfecta, palitos de masa horneada rellenos de suave chocolate derretido.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Chocolate Sticks</h4>
+                                        <div class="menu-price">$7,500.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Para los amantes del chocolate, la combinación perfecta, palitos de masa horneada rellenos de suave chocolate derretido.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="50" data-name="Sweet Roll" data-price="$9,900.00" data-amount="9900" data-description="Delicioso Rollito de masa de pan relleno de bocadillo y queso. Perfecto para acompañar tu pizza." data-image-url="https://menu.kosari.net/storage/menu/16710315016399eacda2688.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg14">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710315016399eacda2688.jpeg" alt="Sweet Roll" data-src="https://menu.kosari.net/storage/menu/16710315016399eacda2688.jpeg" data-sub-html="Delicioso Rollito de masa de pan relleno de bocadillo y queso. Perfecto para acompañar tu pizza.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Sweet Roll</h4>
+                                        <div class="menu-price">$9,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Delicioso Rollito de masa de pan relleno de bocadillo y queso. Perfecto para acompañar tu pizza.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="51" data-name="Hut Poppers Queso y Bocadillo" data-price="$9,900.00" data-amount="9900" data-description="Bocaditos de crujiente masa con queso y bocadillo." data-image-url="https://menu.kosari.net/storage/menu/16710315386399eaf2b3fea.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg15">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710315386399eaf2b3fea.jpeg" alt="Hut Poppers Queso y Bocadillo" data-src="https://menu.kosari.net/storage/menu/16710315386399eaf2b3fea.jpeg" data-sub-html="Bocaditos de crujiente masa con queso y bocadillo.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Hut Poppers Queso y Bocadillo</h4>
+                                        <div class="menu-price">$9,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Bocaditos de crujiente masa con queso y bocadillo.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="52" data-name="Arequipe Hut" data-price="$7,900.00" data-amount="7900" data-description="El paraiso para los amantes del arequipe.Queso y arequipe sobre una base de masa delgada crujiente. 6 porciones." data-image-url="https://menu.kosari.net/storage/menu/16710316296399eb4d43b49.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg16">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710316296399eb4d43b49.jpeg" alt="Arequipe Hut" data-src="https://menu.kosari.net/storage/menu/16710316296399eb4d43b49.jpeg" data-sub-html="El paraiso para los amantes del arequipe.Queso y arequipe sobre una base de masa delgada crujiente. 6 porciones.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Arequipe Hut</h4>
+                                        <div class="menu-price">$7,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">El paraiso para los amantes del arequipe.Queso y arequipe sobre una base de masa delgada crujiente. 6 porciones.</div>
+                                
+                            </div>
+                        </div>
+                    </div></div>
+        
+        <div class="card-body menu-category-item menu-category-13" style="display: none;"><div class="section-menu" data-id="53" data-name="Hut Poppers Queso" data-price="$6,900.00" data-amount="6900" data-description="Deliciosos deditos rellenos con el queso de nuestra Hut Cheese" data-image-url="https://menu.kosari.net/storage/menu/16710318676399ec3b6b4d7.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg17">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710318676399ec3b6b4d7.jpeg" alt="Hut Poppers Queso" data-src="https://menu.kosari.net/storage/menu/16710318676399ec3b6b4d7.jpeg" data-sub-html="Deliciosos deditos rellenos con el queso de nuestra Hut Cheese">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Hut Poppers Queso</h4>
+                                        <div class="menu-price">$6,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Deliciosos deditos rellenos con el queso de nuestra Hut Cheese</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="54" data-name="Bread Sticks" data-price="$5,900.00" data-amount="5900" data-description="Crocantes palitos de pan horneado. 5 unidades." data-image-url="https://menu.kosari.net/storage/menu/16710318956399ec57de3bf.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg18">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710318956399ec57de3bf.jpeg" alt="Bread Sticks" data-src="https://menu.kosari.net/storage/menu/16710318956399ec57de3bf.jpeg" data-sub-html="Crocantes palitos de pan horneado. 5 unidades.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Bread Sticks</h4>
+                                        <div class="menu-price">$5,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Crocantes palitos de pan horneado. 5 unidades.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="55" data-name="Pizza Roll" data-price="$10,900.00" data-amount="10900" data-description="Rollito de masa horneada relleno del sabor que elijas." data-image-url="https://menu.kosari.net/storage/menu/16710319346399ec7e96d11.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg19">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710319346399ec7e96d11.jpeg" alt="Pizza Roll" data-src="https://menu.kosari.net/storage/menu/16710319346399ec7e96d11.jpeg" data-sub-html="Rollito de masa horneada relleno del sabor que elijas.">
+                                    <div class="badge abs nonveg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Pizza Roll</h4>
+                                        <div class="menu-price">$10,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Rollito de masa horneada relleno del sabor que elijas.</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="56" data-name="Nachos Queso Cheddar" data-price="$8,900.00" data-amount="8900" data-description="Deliciosos Nachos con Queso Cheddar" data-image-url="https://menu.kosari.net/storage/menu/16710319706399eca224fab.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg20">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710319706399eca224fab.jpeg" alt="Nachos Queso Cheddar" data-src="https://menu.kosari.net/storage/menu/16710319706399eca224fab.jpeg" data-sub-html="Deliciosos Nachos con Queso Cheddar">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Nachos Queso Cheddar</h4>
+                                        <div class="menu-price">$8,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Deliciosos Nachos con Queso Cheddar</div>
+                                
+                            </div>
+                        </div>
+                    </div><div class="section-menu" data-id="57" data-name="Alitas BBQ x 5 Und." data-price="$15,900.00" data-amount="15900" data-description="
+Incomparables trozos de alas con el sabor único e inconfundible del BBQ." data-image-url="https://menu.kosari.net/storage/menu/16710320036399ecc3cc662.jpeg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg21">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/16710320036399ecc3cc662.jpeg" alt="Alitas BBQ x 5 Und." data-src="https://menu.kosari.net/storage/menu/16710320036399ecc3cc662.jpeg" data-sub-html="
+Incomparables trozos de alas con el sabor único e inconfundible del BBQ.">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Alitas BBQ x 5 Und.</h4>
+                                        <div class="menu-price">$15,900.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">
+Incomparables trozos de alas con el sabor único e inconfundible del BBQ.</div>
+                                
+                            </div>
+                        </div>
+                    </div></div>
+        
+        <div class="card-body menu-category-item menu-category-16" style="display: none;"><div class="section-menu" data-id="60" data-name="Ceviche de camaron" data-price="$2,000.00" data-amount="2000" data-description="Ceviche de camaron marinado a la salsa X" data-image-url="https://menu.kosari.net/storage/menu/167680060863f1f260bbb7d.jpg">
+                        <div class="menu-item list">
+                        <div class="menu-image menu-lightbox" lg-uid="lg22">
+                                    <img class="lazy-load menu-lightbox-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-original="https://menu.kosari.net/storage/menu/167680060863f1f260bbb7d.jpg" alt="Ceviche de camaron" data-src="https://menu.kosari.net/storage/menu/167680060863f1f260bbb7d.jpg" data-sub-html="Ceviche de camaron marinado a la salsa X">
+                                    <div class="badge abs veg"><i class="fa fa-circle"></i></div>
+                                </div> 
+                            <div class="menu-content">
+                                <div class="menu-detail">
+                                    <div class="menu-title">
+                                        <h4>Ceviche de camaron</h4>
+                                        <div class="menu-price">$2,000.00</div>
+                                    </div><div class="add-menu">
+                                        <div class="add-btn add-item-to-order">
+                                            <span>Añadir</span>
+                                            <i class="icon-feather-plus"></i>
+                                        </div>
+                                    </div></div>
+                                <div class="menu-recipe">Ceviche de camaron marinado a la salsa X</div>
+                                
+                            </div>
+                        </div>
+                    </div></div>
+        
+    </div>
+</div>
+<!-- .Content  -->
+
+<!-- Bottom Panel  -->
+<div class="footer none" id="view-order-wrapper">
+    <div class="clearfix"></div>
+    <div class="order-footer">
+        <div class="view-order">
+            <div class="">
+                <div class="item"><span id="view-order-quantity">1</span> Artículos)</div>
+                <span class="price"><span id="view-order-price"></span></span>
+            </div>
+            <button class="order-btn" id="viewOrderBtn">Ver pedido <i class="icon-material-outline-keyboard-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+<!-- Bottom Panel  -->
+
+<!-- Customized Menu -->
+<div id="viewOrder" class="sidenav bottom">
+    <div class="sidebar-header bg-white">
+        <div class="navbar-heading">
+            <h4>Mi pedido</h4>
+        </div>
+        <button type="button" id="dismiss" class="btn ml-auto">
+            <i class="icon-feather-x"></i>
+        </button>
+    </div>
+    <div class="your-order-content">
+        <form type="post" data-id="2" id="send-order-form">
+            <div class="sidebar-wrapper">
+                <div class="section">
+                    <div class="your-order-items"></div>
+                </div>
+                <div class="section3">
+                    <div class="total-price">
+                        <div class="grand-total">
+                            <span>Gran total</span><span class="float-right"><span class="your-order-price"></span></span>
+                        </div>
+                    </div>
+                </div>
+                                <div class="section">
+                    <div class="col-text font-medium my-2">Tipo de pedido</div>
+                    <div class="form-group">
+                        <div class="form-line">
+                            <select name="ordering-type" id="ordering-type" class="form-control" required="">
+                                                                                                <option value="takeaway">Para llevar</option>
+                                                                                                <option value="delivery">Pedir a domicilio                                    (+ $1,000.00)</option>
+                                                            </select>
+                        </div>
+                    </div>
+                </div>
+                                <input name="pay_via" id="pay_via" type="hidden" value="pay_on_counter">
+                                <div class="section">
+                    <div class="col-text font-medium my-2">Pedido para</div>
+                    <div class="form-group">
+                        <div class="form-line">
+                            <input type="text" name="name" class="form-control" placeholder="Tu nombre" required="">
+                        </div>
+                    </div>
+                    <div class="form-group" id="table-number-field" style="display: none;">
+                        <div class="form-line">
+                            <input type="number" name="table" class="form-control" placeholder="Número de mesa">
+                        </div>
+                    </div>
+                    <div class="form-group" id="phone-number-field">
+                        <div class="form-line">
+                            <input type="number" name="phone-number" class="form-control" placeholder="Número de teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group" id="address-field" style="display: none;">
+                        <div class="form-line">
+                            <textarea class="form-control" name="address" placeholder="Direccion" rows="1"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-line">
+                            <textarea class="form-control" name="message" placeholder="Mensaje" rows="1"></textarea>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+                        <!-- Bottom Panel  -->
+            <div class="footer footer-extras">
+                <div class="clearfix"></div>
+                <div class="section">
+                    <small class="form-error"></small>
+                    <button type="submit" class="btn btn-primary btn-block" id="submit-order-button">Enviar orden</button>
+                </div>
+            </div>
+            <!-- Bottom Panel  -->
+                    </form>
+    </div>
+    <div class="order-success-message none">
+        <i class="icon-feather-check qr-success-icon"></i>
+        <h4>Enviado correctamente</h4>
+    </div>
+</div>
+<!--Customized Menu-->
+
+<!-- Customized Menu -->
+<div id="menuCustomize" class="sidenav bottom">
+    <div class="sidebar-header">
+        <div class="navbar-heading">
+            <h4></h4>
+        </div>
+        <button type="button" id="dismiss" class="btn ml-auto">
+            <i class="icon-feather-x"></i>
+        </button>
+    </div>
+    <div class="sidebar-wrapper">
+        <div class="section">
+            <p class="mb-0 customize-item-description"></p>
+        </div>
+        <div class="line-separate mt-0"></div>
+        <div id="menu-variants">
+            <div>
+                <div class="section">
+                    <div class="extras-heading">
+                        <div class="title">Size</div>
+                    </div>
+                    <div class="menu-variant-option">
+                        <div class="extras menu-extra-item">
+                            <label for="checkbox0" class="extra-item-title mb-0">Small</label>
+                            <div class="d-flex align-items-center">
+                                <div class="custom-control custom-radio mr-sm-2">
+                                    <input type="radio" name="variant" class="custom-control-input" id="checkbox0">
+                                    <label class="custom-control-label" for="checkbox0"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extras menu-extra-item">
+                            <label for="checkbox1" class="extra-item-title mb-0">Medium</label>
+                            <div class="d-flex align-items-center">
+                                <div class="custom-control custom-radio mr-sm-2">
+                                    <input type="radio" name="variant" class="custom-control-input" id="checkbox1">
+                                    <label class="custom-control-label" for="checkbox1"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extras menu-extra-item">
+                            <label for="checkbox2" class="extra-item-title mb-0">Large</label>
+                            <div class="d-flex align-items-center">
+                                <div class="custom-control custom-radio mr-sm-2">
+                                    <input type="radio" name="variant" class="custom-control-input" id="checkbox2">
+                                    <label class="custom-control-label" for="checkbox2"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-separate mt-0"></div>
+            </div>
+        </div>
+        <div class="section menu-extra-wrapper">
+            <div class="extras-heading">
+                <div class="title">Extras</div>
+                <small>Seleccione elementos adicionales</small>
+            </div>
+            <div id="customize-extras">
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Panel  -->
+    <div class="footer footer-extras">
+        <div class="clearfix"></div>
+        <div class="section">
+            <div class="row no-gutters">
+                <div class="col-3 p-r-10">
+                    <div class="add-menu">
+                        <div class="add-btn add-item-btn">
+                            <div class="wrapper h-100">
+                                <div class="addition menu-order-quantity-decrease">
+                                    <i class="icon-feather-minus"></i>
+                                </div>
+                                <div class="count">
+                                    <span class="num" id="menu-order-quantity">1</span>
+                                </div>
+                                <div class="addition menu-order-quantity-increase">
+                                    <i class="icon-feather-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 p-l-10">
+                    <button type="button" class="btn btn-primary btn-block" id="add-order-button">Añadir <span id="order-price"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Panel  -->
+</div>
+<!--Customized Menu-->
+
+<!-- Call the waiter -->
+<div id="call-waiter-box" class="sidenav bottom">
+    <div class="sidebar-header bg-white">
+        <div class="navbar-heading">
+            <h4>Llamar al camarero</h4>
+        </div>
+        <button type="button" id="dismiss" class="btn ml-auto">
+            <i class="icon-feather-x"></i>
+        </button>
+    </div>
+    <div>
+        <form type="post" data-id="2" id="call-waiter-form">
+            <div class="sidebar-wrapper">
+                <div class="section">
+                    <div class="form-group" id="table-number-field">
+                        <div class="form-line">
+                            <input type="number" name="table" class="form-control" placeholder="Número de mesa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Panel  -->
+            <div class="footer footer-extras">
+                <div class="clearfix"></div>
+                <div class="section">
+                    <small class="form-error"></small>
+                    <button type="submit" class="btn btn-primary btn-block" id="send-call-waiter">Enviar</button>
+                </div>
+            </div>
+            <!-- Bottom Panel  -->
+        </form>
+    </div>
+</div>
+<!-- Call the waiter -->
+
+<div class="overlay"></div>
+<script>
+    var TOTAL_MENUS = {"37":{"id":"37","title":"Mediana Borde de Queso","price":"25000","type":"veg","description":"Una Pizza Mediana de 8 porciones con borde de queso (Hut Cheese) de un Ingrediente: Queso, Jam&oacute;n, Tomate o Pepperoni \ud83c\udf55\ud83e\udd24. \ud83d\udef5&iexcl;DOMICILIO GRATIS!\ud83d\udef5","variant_options":[],"variants":[],"extras":[]},"36":{"id":"36","title":"Combo Familiar","price":"25000","type":"veg","description":"Pizza Grande (12 porciones) elige entre Jam&oacute;n, Pepperoni, Napolitana o Queso + Chocolate Sticks + Gaseosa 1.5 Lts. \ud83e\udd24\ud83c\udf55. Si eliges masa Hut Cheese o Cheesy Pops (8 porciones) el borde tiene costo adicional.","variant_options":[],"variants":[],"extras":[{"id":"11","title":"Queso","price":"2000.00"}]},"38":{"id":"38","title":"Cheesy Pops Grande M&aacute;s Sabores!\ud83c\udf55\ud83e\udd24","price":"27000","type":"veg","description":"Pizza Grande (8 porciones) con Borde de Queso (Hut Cheese o Cheesy Pops) Exclusiva pidiendo online. Aprovecha los m&uacute;ltiples sabores que tenemos para ti \ud83c\udf55\ud83e\udd24","variant_options":[],"variants":[],"extras":[]},"39":{"id":"39","title":"2 Pizzas Medianas + Bebida 1,5 Lt.","price":"45000","type":"nonveg","description":"DUO BOX Medianas en sabores Tradicionales en masas Thin &amp; Crispy, Artesanal o Pan Pizza. Elige sabores Irresistibles +5.900 c\/u y Borde de Queso (Hut Cheese) +7.900 c\/u.","variant_options":[],"variants":[],"extras":[]},"40":{"id":"40","title":"Hawaiana","price":"35000","type":"veg","description":"La hawaiana m&aacute;s hawaiana de todas: jam&oacute;n y pi&ntilde;a. &iexcl;Pru&eacute;bala!","variant_options":[],"variants":[],"extras":[]},"41":{"id":"41","title":"Pepperoni","price":"35000","type":"nonveg","description":"Sabemos que muchos aman el pepperoni, por eso creamos esta pizza. Escoge tu masa y disfruta el pepperoni.","variant_options":[],"variants":[],"extras":[]},"42":{"id":"42","title":"Pepsi 1.5L","price":"5000","type":"nonveg","description":"Llena de sabor y energ&iacute;a, presentaci&oacute;n de litro y medio","variant_options":[],"variants":[],"extras":[]},"43":{"id":"43","title":"Pepsi 400ML","price":"5000","type":"nonveg","description":"Llena de sabor y energ&iacute;a, presentaci&oacute;n 400 ml.","variant_options":[],"variants":[],"extras":[]},"44":{"id":"44","title":"Manzana 400ML","price":"5000","type":"nonveg","description":"&iexcl;&Uacute;nica en el mundo por su sabor y color!, presentaci&oacute;n 400 ml.","variant_options":[],"variants":[],"extras":[]},"45":{"id":"45","title":"Mr Tea Durazno 500 ml.","price":"5000","type":"nonveg","description":"Llena de sabor y energ&iacute;a, presentaci&oacute;n de 500 ml.","variant_options":[],"variants":[],"extras":[]},"46":{"id":"46","title":"Agua Cristal 600 ml","price":"25000","type":"nonveg","description":"&iexcl;El agua de vida!","variant_options":[],"variants":[],"extras":[]},"47":{"id":"47","title":"7UP 2 Lt.","price":"5500","type":"nonveg","description":"Para disfrutar la vida de una forma descomplicada, presentaci&oacute;n de dos litros.","variant_options":[],"variants":[],"extras":[]},"48":{"id":"48","title":"Cinnamon Sticks","price":"6900","type":"nonveg","description":"5 trozos de delicioso Pan y Canela, la combinaci&oacute;n perfecta e inmejorable!","variant_options":[],"variants":[],"extras":[]},"49":{"id":"49","title":"Chocolate Sticks","price":"7500","type":"nonveg","description":"Para los amantes del chocolate, la combinaci&oacute;n perfecta, palitos de masa horneada rellenos de suave chocolate derretido.","variant_options":[],"variants":[],"extras":[]},"50":{"id":"50","title":"Sweet Roll","price":"9900","type":"nonveg","description":"Delicioso Rollito de masa de pan relleno de bocadillo y queso. Perfecto para acompa&ntilde;ar tu pizza.","variant_options":[],"variants":[],"extras":[]},"51":{"id":"51","title":"Hut Poppers Queso y Bocadillo","price":"9900","type":"nonveg","description":"Bocaditos de crujiente masa con queso y bocadillo.","variant_options":[],"variants":[],"extras":[]},"52":{"id":"52","title":"Arequipe Hut","price":"7900","type":"nonveg","description":"El paraiso para los amantes del arequipe.Queso y arequipe sobre una base de masa delgada crujiente. 6 porciones.","variant_options":[],"variants":[],"extras":[]},"53":{"id":"53","title":"Hut Poppers Queso","price":"6900","type":"nonveg","description":"Deliciosos deditos rellenos con el queso de nuestra Hut Cheese","variant_options":[],"variants":[],"extras":[]},"54":{"id":"54","title":"Bread Sticks","price":"5900","type":"nonveg","description":"Crocantes palitos de pan horneado. 5 unidades.","variant_options":[],"variants":[],"extras":[]},"55":{"id":"55","title":"Pizza Roll","price":"10900","type":"nonveg","description":"Rollito de masa horneada relleno del sabor que elijas.","variant_options":[],"variants":[],"extras":[]},"56":{"id":"56","title":"Nachos Queso Cheddar","price":"8900","type":"veg","description":"Deliciosos Nachos con Queso Cheddar","variant_options":[],"variants":[],"extras":[]},"57":{"id":"57","title":"Alitas BBQ x 5 Und.","price":"15900","type":"veg","description":"\r\nIncomparables trozos de alas con el sabor &uacute;nico e inconfundible del BBQ.","variant_options":[],"variants":[],"extras":[]},"60":{"id":"60","title":"Ceviche de camaron","price":"2000","type":"veg","description":"Ceviche de camaron marinado a la salsa X","variant_options":[],"variants":[],"extras":[]}};
+    var CURRENCY_SIGN = '&#36;';
+    var CURRENCY_LEFT = 1;
+    var CURRENCY_DECIMAL_PLACES = 2;
+    var CURRENCY_DECIMAL_SEPARATOR = '.';
+    var CURRENCY_THOUSAND_SEPARATOR = ',';
+
+    var session_uname = "";
+    var session_uid = "";
+    var session_img = "{USERPIC}";
+    // Language Var
+    var LANG_ERROR_TRY_AGAIN = "Error: inténtelo de nuevo.";
+    var LANG_LOGGED_IN_SUCCESS = "Se conectó correctamente. Redirigiendo ...";
+    var LANG_ERROR = "Error";
+    var LANG_CANCEL = "Cancelar";
+    var LANG_DELETED = "Eliminado";
+    var LANG_ARE_YOU_SURE = "¿Estás seguro?";
+    var LANG_YOU_WANT_DELETE = "{LANG_YOU_WANT_DELETE}";
+    var LANG_YES_DELETE = "Si, bórralo";
+    var LANG_SHOW = "mostrar";
+    var LANG_HIDE = "Esconder";
+    var LANG_HIDDEN = "Oculto";
+
+    var LANG_TYPE_A_MESSAGE = "Escribe un mensaje";
+    var LANG_ADD_FILES_TEXT = "{LANG_ADD_FILES_TEXT}";
+    var LANG_JUST_NOW = "Justo ahora";
+    var LANG_PREVIEW = "Avance";
+    var LANG_SEND = "Enviar";
+    var LANG_FILENAME = "{LANG_FILENAME}";
+    var LANG_STATUS = "Estado";
+    var LANG_SIZE = "Talla";
+    var LANG_DRAG_FILES_HERE = "{LANG_DRAG_FILES_HERE}";
+    var LANG_STOP_UPLOAD = "{LANG_STOP_UPLOAD}";
+    var LANG_ADD_FILES = "{LANG_ADD_FILES}";
+
+    var LANG_ADD = "Añadir";
+    var LANG_PAY_NOW = "Pagar ahora";
+    var LANG_SEND_ORDER = "Enviar orden";
+</script>
+<!-- Optional JavaScript -->
+<!--  Bootstrap v4.3.1 JS -->
+<script src="https://menu.kosari.net/includes/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://menu.kosari.net/restaurant-templates/modern-theme/lib/node-waves/waves.js"></script>
+<script src="https://menu.kosari.net/templates/restro-theme/js/jquery.lazyload.min.js"></script>
+<script src="https://menu.kosari.net/templates/restro-theme/js/tippy.all.min.js"></script>
+<script src="https://menu.kosari.net/templates/restro-theme/js/jquery.cookie.min.js"></script>
+<script src="https://menu.kosari.net/templates/restro-theme/js/md5.min.js"></script>
+<script src="https://menu.kosari.net/restaurant-templates/modern-theme/lib/lightbox/lightgallery.min.js"></script>
+<!--  Custom JS -->
+<script src="https://menu.kosari.net/restaurant-templates/modern-theme/js/theme.js?ver=6.3.5"></script>
+
+
+ </body></html>
